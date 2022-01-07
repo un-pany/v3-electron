@@ -6,7 +6,7 @@ import { store } from '@/store'
 import { ElMessage } from 'element-plus'
 import { whiteList } from '@/config/white-list'
 import rolesSettings from '@/config/roles'
-import { getToken } from '@/utils/cookies'
+import { getToken } from '@/utils/cache'
 
 NProgress.configure({ showSpinner: false })
 

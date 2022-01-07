@@ -1,4 +1,4 @@
-import { getToken, removeToken, setToken } from '@/utils/cookies'
+import { getToken, removeToken, setToken } from '@/utils/cache'
 import router, { resetRouter } from '@/router'
 import { accountLogin, userInfoRequest } from '@/api/login'
 import { RouteRecordRaw } from 'vue-router'

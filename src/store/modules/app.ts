@@ -1,4 +1,4 @@
-import { getSidebarStatus, getActiveThemeName, setSidebarStatus, setActiveThemeName } from '@/utils/cookies'
+import { getSidebarStatus, getActiveThemeName, setSidebarStatus, setActiveThemeName } from '@/utils/cache'
 import themeList from '@/config/theme'
 
 export enum DeviceType {

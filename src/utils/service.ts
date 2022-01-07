@@ -1,7 +1,7 @@
 import axios, { AxiosInstance, AxiosRequestConfig } from 'axios'
 import { get } from 'lodash'
 import { ElMessage } from 'element-plus'
-import { getToken } from '@/utils/cookies'
+import { getToken } from '@/utils/cache'
 
 // 创建请求实例
 function createService() {

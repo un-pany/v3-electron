@@ -1,0 +1,143 @@
+<template>
+  <div :class="{'has-logo': showLogo}">
+    <SidebarLogo v-if="showLogo" :collapse="isCollapse" />
+    <el-scrollbar wrap-class="scrollbar-wrapper">
+      <el-menu
+        :collapse="isCollapse"
+        :unique-opened="true"
+        :default-active="activeMenu"
+        :background-color="variables.menuBg"
+        :text-color="variables.menuText"
+        :active-text-color="variables.menuActiveText"
+        mode="vertical"
+      >
+        <SidebarItem
+          v-for="routeItem in routes"
+          :key="routeItem.path"
+          :item="routeItem"
+          :base-path="routeItem.path"
+          :is-collapse="isCollapse"
+        />
+      </el-menu>
+    </el-scrollbar>
+  </div>
+</template>
+
+<script lang="ts" setup>
+import { computed } from 'vue'
+import SidebarItem from './sidebar-item.vue'
+import SidebarLogo from './sidebar-logo.vue'
+import variables from '@/styles/variables.scss'
+import { store } from '@/store'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const sidebar = computed(() => {
+  return store.state.app.sidebar
+})
+const routes = computed(() => {
+  return store.state.permission.routes
+})
+const showLogo = computed(() => {
+  return store.state.settings.showSidebarLogo
+})
+const activeMenu = computed(() => {
+  const { meta, path } = route
+  if (meta !== null || meta !== undefined) {
+    if (meta.activeMenu) {
+      return meta.activeMenu
+    }
+  }
+  return path
+})
+const isCollapse = computed(() => {
+  return !sidebar.value.opened
+})
+</script>
+
+<style lang="scss">
+.sidebar-container {
+  // 重置当前页面的 element-plus css, ，注意，虽然没有加 scoped 标识，但是被该页面的 sidebar-container 类名包裹，所以不会影响其他页面
+  .horizontal-collapse-transition {
+    transition: 0s width ease-in-out, 0s padding-left ease-in-out,
+      0s padding-right ease-in-out;
+  }
+
+  .scrollbar-wrapper {
+    overflow-x: hidden !important;
+  }
+
+  .el-scrollbar__view {
+    height: 100%;
+  }
+
+  .el-scrollbar__bar {
+    &.is-vertical {
+      right: 0;
+    }
+
+    &.is-horizontal {
+      display: none;
+    }
+  }
+}
+</style>
+
+<style lang="scss" scoped>
+.el-scrollbar {
+  height: 100%;
+}
+
+.has-logo {
+  .el-scrollbar {
+    // 84px 是 logo 区域的 height
+    height: calc(100% - 84px);
+  }
+}
+
+.el-menu {
+  border: none;
+  height: 100%;
+  width: 100% !important;
+}
+
+::v-deep(.el-menu-item) {
+  height: 65px;
+  line-height: 65px;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  &.is-active {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background-color: #39cedd;
+    }
+  }
+  display: block;
+  * {
+    vertical-align: middle;
+  }
+}
+
+::v-deep(.el-sub-menu__title) {
+  height: 65px;
+  line-height: 65px;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  display: block;
+  * {
+    vertical-align: middle;
+  }
+}
+
+::v-deep(.el-sub-menu .el-menu-item) {
+  height: 60px !important;
+  line-height: 60px !important;
+}
+</style>

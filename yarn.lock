@@ -1065,57 +1065,6 @@
     lodash "^4.17.15"
     tmp-promise "^3.0.2"
 
-"@mitojs/browser@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@mitojs/browser/-/browser-3.0.1.tgz#3d97593adad787f7f30f8cdc3982e3b02b257751"
-  integrity sha512-NLk0fnfGmucjiDqWAZp77jmC9dD5sBPJ2R6tJ5GfElTyArWxK0MGepUTOl34YpVjEnrmpqmBn1pmfZVRIlQR1Q==
-  dependencies:
-    "@mitojs/core" "3.0.1"
-    "@mitojs/shared" "3.0.1"
-    "@mitojs/types" "3.0.1"
-    "@mitojs/utils" "3.0.1"
-
-"@mitojs/core@3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@mitojs/core/-/core-3.0.1.tgz#39c29c7d774253b95fb17bdcd3907d58e1d06e0b"
-  integrity sha512-eUJYaQ4+Z7lbnUZ+wbwoHTu5LASPoUp8g0Slv0djfJEQ/nWWDZ0ftwVtWt+7019Y2zBXkyybdsPqUZAdBEmKEA==
-  dependencies:
-    "@mitojs/shared" "3.0.1"
-    "@mitojs/types" "3.0.1"
-    "@mitojs/utils" "3.0.1"
-
-"@mitojs/shared@3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@mitojs/shared/-/shared-3.0.1.tgz#823ffae23ab4b769d714cf0475e8f84d5056be26"
-  integrity sha512-WPZ0QPTnNroiRDoFfPf4tfJpqkl4LMf/Nv1Q10+NNfCJd82nraIT+uPEvU4B6L6WRdpoQUoLZ9ImwSC1h+/yKw==
-
-"@mitojs/types@3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@mitojs/types/-/types-3.0.1.tgz#93f8a598f710c57d3618f049853d3cb2d0e0668f"
-  integrity sha512-2qvMdmSqnkuQI3NohaF60nYPWzh+A4lzNMC65O+Jftoo3q8Kk0NC7mBSQUQp2wyLlcL1kUgObo614Chs/2Zg6g==
-  dependencies:
-    "@mitojs/core" "3.0.1"
-    "@mitojs/shared" "3.0.1"
-    "@mitojs/utils" "3.0.1"
-    "@types/wechat-miniprogram" "^3.1.0"
-
-"@mitojs/utils@3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@mitojs/utils/-/utils-3.0.1.tgz#74e25d5b472f2ea71950546449fa9a026094cdc5"
-  integrity sha512-HpIJnhuv+AwMegK6LO/F9NtNiLMARqFw04e4bO1Jryqb9IOCFxKg5ZzQ3tEP9kj7ax797XL46zZjRbkbV3hKcQ==
-  dependencies:
-    "@mitojs/shared" "3.0.1"
-    "@mitojs/types" "3.0.1"
-
-"@mitojs/vue@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@mitojs/vue/-/vue-3.0.1.tgz#619963c26016d9c825a4b09d1ebfce5802de1880"
-  integrity sha512-dcETu30B14mjH4ubT86hGf4M4P/7mZLs9p8ha60fzbc8HKCz0B+hohDOLGIU+QyMqzPOBwdNLJMlIW3xnJb6kA==
-  dependencies:
-    "@mitojs/shared" "3.0.1"
-    "@mitojs/types" "3.0.1"
-    "@mitojs/utils" "3.0.1"
-
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -1428,11 +1377,6 @@
     "@types/webpack-sources" "*"
     anymatch "^3.0.0"
     source-map "^0.6.0"
-
-"@types/wechat-miniprogram@^3.1.0":
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/@types/wechat-miniprogram/-/wechat-miniprogram-3.4.0.tgz#d743d5b3c17bd531c2c178ea1fe9d92a0b23bcd0"
-  integrity sha512-7d7KDwoV42/ANx/0C8C4ctBv1q9XnXYD4Fz0C+3ii0Tm+HRIwwDcinv8S88Ut/Y80czlI0shGpTgLFe0GbrXWQ==
 
 "@types/yargs-parser@*":
   version "20.2.1"

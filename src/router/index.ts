@@ -34,22 +34,6 @@ export const constantRoutes: Array<RouteRecordRaw> = [
         }
       }
     ]
-  },
-  {
-    path: '/monitor',
-    component: Layout,
-    redirect: '/monitor',
-    children: [
-      {
-        path: 'monitor',
-        component: () => import(/* webpackChunkName: "monitor" */ '@/views/monitor/index.vue'),
-        name: 'Monitor',
-        meta: {
-          title: '监控',
-          icon: 'bug'
-        }
-      }
-    ]
   }
 ]
 

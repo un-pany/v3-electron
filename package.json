@@ -15,8 +15,6 @@
   "main": "background.js",
   "dependencies": {
     "@element-plus/icons-vue": "^0.2.4",
-    "@mitojs/browser": "^3.0.1",
-    "@mitojs/vue": "^3.0.1",
     "axios": "^0.24.0",
     "dayjs": "^1.10.7",
     "element-plus": "1.3.0-beta.1",

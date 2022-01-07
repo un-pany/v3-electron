@@ -33,6 +33,7 @@ async function createWindow() {
     createProtocol('app')
     // Load the index.html when not in development
     win.loadURL('app://./index.html')
+    win.webContents.openDevTools()
   }
 }
 
@@ -59,7 +60,7 @@ app.on('ready', async() => {
     // Install Vue Devtools
     try {
       await installExtension(VUEJS3_DEVTOOLS)
-    } catch (e) {
+    } catch (e: any) {
       console.error('Vue Devtools failed to install:', e.toString())
     }
   }

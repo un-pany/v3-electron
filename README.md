@@ -69,6 +69,7 @@
 │  ├─ utils           # 全局公共方法
 │  └─ views           # 所有页面
 │  ├─ App.vue         # 入口页面
+│  ├─ background.ts   # 主进程
 │  ├─ main.ts         # 入口文件
 │  └─ shims.d.ts      # 模块注入
 ├─ tsconfig.json      # ts 编译配置
@@ -120,6 +121,6 @@ yarn lint
 
 ## 📄 License
 
-[MIT](https://github.com/un-pany/v3-admin-electron/blob/master/LICENSE)
+[MIT](https://github.com/un-pany/v3-admin-electron/blob/main/LICENSE)
 
 Copyright (c) 2022 UNPany

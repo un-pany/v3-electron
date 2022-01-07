@@ -1,6 +1,8 @@
+> 还在开发中，欢迎提交 PR 共建！
+
 ## ⚡️ 简介
 
-完全基于 [v3-admin](https://github.com/un-pany/v3-admin)
+完全基于 [v3-admin](https://github.com/un-pany/v3-admin) 的 Electron 项目模板，文档也请参考 v3-admin 的文档。
 
 ## ⌛ 功能
 

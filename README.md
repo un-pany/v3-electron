@@ -1,4 +1,4 @@
-> .npmrc 中 ELECTRON_CUSTOM_DIR 和 package.json 中 electron 的版本号必须同步
+> 国内环境在安装依赖和打包时，需要切换 .npmrc 文件中的镜像源配置
 
 ## ⚡️ 简介
 

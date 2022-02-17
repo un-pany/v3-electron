@@ -1,4 +1,4 @@
-> 还在开发中，欢迎提交 PR 共建！
+> .npmrc 中 ELECTRON_CUSTOM_DIR 和 package.json 中 electron 的版本号必须同步
 
 ## ⚡️ 简介
 

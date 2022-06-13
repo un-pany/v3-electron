@@ -1,7 +1,7 @@
 {
-  "name": "v3-admin-electron",
+  "name": "v3-electron",
   "version": "2.5.1",
-  "homepage": "https://github.com/un-pany/v3-admin-electron",
+  "homepage": "https://github.com/un-pany/v3-electron",
   "scripts": {
     "dev": "vue-cli-service electron:serve",
     "build:test": "vue-cli-service electron:build --mode test",

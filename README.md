@@ -121,6 +121,6 @@ yarn lint
 
 ## 📄 License
 
-[MIT](https://github.com/un-pany/v3-admin-electron/blob/main/LICENSE)
+[MIT](https://github.com/un-pany/v3-electron/blob/main/LICENSE)
 
 Copyright (c) 2022 UNPany

@@ -6,7 +6,7 @@ const vueDefaultConfig = {
   assetsDir: 'static',
   lintOnSave: true, // 是否开启 eslint 自动校验
   productionSourceMap: false, // 不输出 map 文件，以加速生产环境构建
-  title: 'v3-admin-electron', // webpack 配置的项目名称
+  title: 'v3-electron', // webpack 配置的项目名称
   devServer: {
     publicPath: '/',
     hot: true,

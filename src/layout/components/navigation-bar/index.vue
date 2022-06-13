@@ -16,7 +16,7 @@
             <a target="_blank" href="https://github.com/un-pany/v3-admin">
               <el-dropdown-item>基于 v3-admin</el-dropdown-item>
             </a>
-            <a target="_blank" href="https://github.com/un-pany/v3-admin-electron">
+            <a target="_blank" href="https://github.com/un-pany/v3-electron">
               <el-dropdown-item>GitHub</el-dropdown-item>
             </a>
             <el-dropdown-item divided @click="state.logout">

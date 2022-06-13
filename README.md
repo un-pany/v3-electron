@@ -41,7 +41,7 @@
 ## 目录结构
 
 ```
-# v3-admin-electron
+# v3-electron
 ├─ .env.development   # 开发环境
 ├─ .env.production    # 生产环境
 ├─ .env.test          # 测试环境
